@@ -16,7 +16,7 @@ ng serve
 ```
 
 # app.chart html template
-
+You can add a div tag to render the chart like this,
 ```
 <div id="{{chart.id}}"></div>
 ```
