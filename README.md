@@ -60,3 +60,27 @@ export class ChartComponent implements AfterViewInit {
       }
    }
 ```
+# app.component html file
+You can see the mail page thats going to render zingchart component below two textboxes
+
+```
+<div class="container">
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="height">Height (cm)</label>
+            <input type="number" class="form-control" id="height" name="height" 
+            placeholder="Height" [(ngModel)]="height" (change)="onValueChange()"/>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" class="form-control" id="weight" name="weight" 
+            placeholder="Weight" [(ngModel)]="weight" (change)="onValueChange()"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <app-chart></app-chart>
+        </div>
+      </form>
+</div>
+```
