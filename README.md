@@ -84,3 +84,19 @@ You can see the mail page thats going to render zingchart component below two te
       </form>
 </div>
 ```
+
+# text box value change event
+
+You can see the change event in height and weight text boxes as below.
+
+```
+onValueChange() {
+    var bmi = (this.weight / ((this.height / 100) * (this.height / 100)));
+    if (isNaN(bmi) || bmi < 10)
+      bmi = 10;
+    else if (bmi > 40)
+      bmi = 40;
+    this.bmi = bmi.toFixed(2);
+    this.chartComponent.ChangeChartValue(this.bmi);
+  }
+``` 
