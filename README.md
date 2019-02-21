@@ -100,3 +100,14 @@ onValueChange() {
     this.chartComponent.ChangeChartValue(this.bmi);
   }
 ``` 
+
+Then it will call chart value change and render the new value in the screen
+
+```
+ChangeChartValue (value){
+        zingchart.exec('chart-1', 'setseriesvalues', {
+          plotindex : 0,
+          values : [Number(value)]
+      });
+```
+
