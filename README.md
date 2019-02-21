@@ -14,3 +14,9 @@ ng build
 
 ng serve
 ```
+
+# app.chart html template
+
+```
+<div id="{{chart.id}}"></div>
+```
