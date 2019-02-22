@@ -111,3 +111,4 @@ ChangeChartValue (value){
       });
 ```
 
+If you want to know more, go through this post [How To: Validate user inputs using Angular](https://social.technet.microsoft.com/wiki/contents/articles/52571.how-to-validate-user-inputs-using-angular.aspx) 
